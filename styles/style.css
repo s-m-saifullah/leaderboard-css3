@@ -19,6 +19,15 @@
 
 body {
   font-family: var(--primary-font);
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -41,6 +50,16 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 /* -----------
@@ -69,11 +88,156 @@ nav ul {
   gap: 36px;
 }
 
-nav ul {
-  list-style-type: none;
+nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
+/* -------------
+    Top Players
+---------------- */
+
+.top-section {
+  padding: 30px;
+  margin: 36px auto 28px;
+  border-radius: 5px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  margin: 40px 0 30px;
+}
+
+.player {
+  column-gap: 16px;
+}
+
+.player-img img {
+  width: 56px;
+}
+
+hr {
+  border: 1px solid #d1d1d1;
+}
+
+.top-blogs .section-title {
+  margin: 30px 0;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 25px;
+  row-gap: 26px;
+}
+
+.blog {
+  gap: 16px;
+}
+
+.blog-img {
+  width: 45%;
+}
+
+.blog-info {
+  width: 50%;
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #000000;
+}
+
+.blog-author {
+  margin-top: 6px;
+  color: #9f9f9f;
+}
+
+.blog-author a {
+  color: var(--primary-color);
+}
+
+/* ----------------
+    Latest Course
+------------------- */
+
+.course-section {
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.course-section .section-title {
+  margin-bottom: 30px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 23px;
+}
+
+.course {
+  padding: 13px;
+  box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.course-title {
+  font-family: var(--tertiary-font);
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  display: block;
+  margin-top: 16px;
+}
+
+.course-author {
+  color: var(--secondary-color);
+  display: block;
+  margin: 6px 0 20px;
+}
+
+.ratings i {
+  color: #ffc014;
+  font-size: 12px;
+}
+
+.ratings i.empty {
+  color: #aeaeae;
+  opacity: 0.25;
+}
+
+.ratings span {
+  color: #a2a2a2;
+  font-size: 14px;
+}
+
+.course-duration {
+  padding: 5px 8px;
+  background-color: #fee5df;
+  border-radius: 15px;
+}
+
+.course-duration i {
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-right: 3px;
+}
+
+.course-duration span {
+  font-size: 15px;
+  color: var(--secondary-color);
 }
