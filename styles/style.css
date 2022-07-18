@@ -1,0 +1,79 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Roboto&display=swap");
+
+/* variables */
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --tertiary-font: "Roboto", sans-serif;
+  --primary-color: #562eff;
+  --secondary-color: #ed6b4f;
+}
+
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 870px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* -----------
+    Header
+-------------- */
+header {
+  background-color: var(--primary-color);
+  padding: 26px 0 17px;
+}
+
+.logo {
+  gap: 15px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h3 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+nav ul {
+  gap: 36px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
