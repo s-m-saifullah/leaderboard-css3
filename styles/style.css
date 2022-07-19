@@ -241,3 +241,75 @@ hr {
   font-size: 15px;
   color: var(--secondary-color);
 }
+
+@media (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .players {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .player {
+    flex-direction: column;
+  }
+
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog-img,
+  .blog-info {
+    width: 100%;
+  }
+
+  .blog-info {
+    text-align: center;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .course-title,
+  .course-author {
+    text-align: center;
+  }
+}
+
+/* Medium Devices */
+
+@media (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .course {
+    width: 47%;
+  }
+}
